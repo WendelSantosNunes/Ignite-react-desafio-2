@@ -1,3 +1,7 @@
 export function Success() {
-  return <h1>Sucess</h1>
+  return (
+    <>
+      <h1>Home</h1>
+    </>
+  )
 }
