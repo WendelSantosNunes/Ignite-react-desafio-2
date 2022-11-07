@@ -7,7 +7,7 @@ import LogoImg from '../../assets/logo.svg'
 export function Header() {
   return (
     <>
-      <HeaderContainer className="container">
+      <HeaderContainer>
         <div>
           <NavLink to="/" end title="Home">
             <img src={LogoImg} alt="Logo Marca" />
@@ -18,9 +18,9 @@ export function Header() {
             <MapPin size={22} weight="fill" />
             <p>Porto Alegre, RS</p>
           </div>
-          <div className="cart">
+          <NavLink to="/Checkout" end title="Checkout" className="cart">
             <ShoppingCart size={22} weight="fill" />
-          </div>
+          </NavLink>
         </CartContainer>
       </HeaderContainer>
     </>

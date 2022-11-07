@@ -5,6 +5,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
 
   margin: 2.0625rem auto;
+  padding: 0 10px;
 
   display: flex;
   justify-content: space-between;
@@ -12,7 +13,7 @@ export const HeaderContainer = styled.header`
   flex-wrap: wrap;
 `
 
-export const CartContainer = styled.div`
+export const CartContainer = styled.nav`
   display: flex;
   align-items: center;
 
@@ -34,7 +35,8 @@ export const CartContainer = styled.div`
   }
 
   .cart {
-    margin: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 0.375rem;
 
     background-color: ${(props) => props.theme['yellow-light']};
 
