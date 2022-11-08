@@ -13,7 +13,6 @@ export const IntroContainer = styled.main`
     margin: 5.75rem auto;
 
     display: flex;
-    /* flex-wrap: wrap; */
 
     div > img {
       max-width: 29.75rem;
@@ -28,7 +27,10 @@ export const IntroInfo = styled.div`
   width: 100%;
 
   h1 {
+    font-family: 'Baloo 2', cursive;
     font-size: 3rem;
+    font-weight: 800;
+
     color: ${(props) => props.theme['base-title']};
   }
 

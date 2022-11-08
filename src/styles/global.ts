@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
         --webkit-font-smoothing: antialiased;
     }
     body, textarea, input, button{
-        font-family: 'Baloo 2', cursive;
+        /* font-family: 'Baloo 2', cursive; */
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1rem;
