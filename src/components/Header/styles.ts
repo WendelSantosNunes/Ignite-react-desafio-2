@@ -11,6 +11,14 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (max-width: 19.6875rem) {
+    flex-direction: column;
+
+    img {
+      margin-bottom: 1rem;
+    }
+  }
 `
 
 export const CartContainer = styled.nav`

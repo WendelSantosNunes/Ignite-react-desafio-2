@@ -3,21 +3,42 @@ import BackgroundImg from '../../../../assets/background.png'
 
 export const IntroContainer = styled.main`
   width: 100%;
-  height: 34rem;
   background-image: url(${BackgroundImg});
+  background-size: cover;
+
+  padding-bottom: 5.75rem;
 
   .intro {
     width: 100%;
     max-width: 70rem;
 
-    margin: 5.75rem auto;
+    margin: 0 auto;
 
     display: flex;
+    align-items: center;
 
     div > img {
       max-width: 29.75rem;
       width: 100%;
     }
+
+    @media (max-width: 60rem) {
+      flex-direction: column;
+      justify-content: center;
+
+      div > img {
+        margin-top: 20px;
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 37.5rem) {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 37.5rem) {
+    padding-bottom: 0;
   }
 `
 
@@ -80,6 +101,14 @@ export const InfoList = styled.ul`
     li:nth-child(2) svg {
       color: ${(props) => props.theme['background-regular']};
       background-color: ${(props) => props.theme['purple-regular']};
+    }
+  }
+
+  @media (max-width: 37.5rem) {
+    justify-content: center;
+
+    li {
+      display: block;
     }
   }
 `

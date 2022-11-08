@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
   background-color: ${(props) => props.theme['base-card']};
   border-radius: 0.375rem 2rem 0.375rem 2rem;
   width: 100%;
-  max-width: 15.8125rem;
+  max-width: 16rem;
 
   .coffeeImg,
   .coffeeInfo {
@@ -27,8 +27,11 @@ export const CoffeeImg = styled.div`
 
 export const CoffeeInf = styled.div`
   .brand {
+    display: fledx;
+    gap: 0.25rem;
+
     p {
-      font-size: 0.875rem;
+      font-size: 0.625rem;
       font-weight: bold;
 
       padding: 0.25rem 0.5rem;
@@ -48,11 +51,15 @@ export const CoffeeInf = styled.div`
   }
 
   .description {
-    font-size: 0.875rem;
-    color: ${(props) => props.theme['base-label']};
-
+    height: 2.25rem;
     margin: 0 1.25rem 2rem;
-    text-align: center;
+
+    p {
+      font-size: 0.875rem;
+      color: ${(props) => props.theme['base-label']};
+
+      text-align: center;
+    }
   }
 `
 
