@@ -23,7 +23,7 @@ export const MainContainer = styled.main`
     width: 100%;
     max-width: 71.25rem;
 
-    margin: 0 0.625rem;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
