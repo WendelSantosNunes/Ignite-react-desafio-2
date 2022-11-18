@@ -5,14 +5,16 @@ import { Card } from './components/Card'
 import { MainContainer } from './styles'
 
 export function Home() {
-  const items = useContext(ListContext)
+  const { list } = useContext(ListContext)
 
-  const listItems = items.map((item) => {
+  const listItems = list.map((item) => {
     return (
       <Card
         key={item.id}
+        id={item.id}
         img={item.img}
         name={item.name}
+        amount={item.amount}
         coffeeType={item.coffeeType}
         description={item.description}
         price={item.price}
